@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Roboto+Slab&family=Rochester&display=swap"
+    rel="stylesheet">
+  <title>Registration</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header class="header">
+      <nav class="header__navbar">
+        <ul class="header-navbar__list">
+          <li class="header-navbar__item"><a class="header-navbar__link" href="../index.html">Main Page</a></li>
+          <li class="header-navbar__item"><a class="header-navbar__link" href="articles.html">Articles</a></li>
+          <li class="header-navbar__item"><a class="header-navbar__link" href="catalog.html">Catalog</a></li>
+          <li class="header-navbar__item"><a class="header-navbar__link" href="contacts.html">Contacts</a></li>
+          <li class="header-navbar__item"><a class="header-navbar__link" href="gallery.html">Gallery</a></li>
+          <li class="header-navbar__item"><a class="header-navbar__link" href="page-nav.html">Navigation</a></li>
+          <li class="header-navbar__item"><a class="header-navbar__link" href="registration.html">Registration</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h1>Registration</h1>
+
+      <form action="https://tests.fomenko.top/echo/index.php">
+        <fieldset class="fieldset">
+          <legend>Registration</legend>
+
+          <div>
+            <div>
+              <label class="fieldset__label" for="firstname">First Name</label>
+              <input type="text" name="firstname" id="firstname" required placeholder="First Name">
+            </div>
+
+            <div>
+              <label class="fieldset__label" for="lastname">Last Name</label>
+              <input type="text" name="lastname" id="lastname" required placeholder="Last Name">
+            </div>
+
+            <div>
+              <label class="fieldset__label" for="password">Password</label>
+              <input type="password" name="password" id="password" required placeholder="Password">
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <div class="input-radio">
+            <input type="radio" name="gender" id="male" value="male" checked>
+            <label for="male">Male</label>
+          </div>
+          <div class="input-radio">
+            <input class="input-gender--border" type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+          </div>
+
+          <div>
+            <label class="fieldset__label" for="birthdate">Birthdate</label>
+            <input type="date" name="birthdate" id="birthdate">
+          </div>
+
+          <div>
+            <label class="fieldset__label" for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email">
+          </div>
+
+          <div>
+            <label class="fieldset__label" for="site">Website</label>
+            <input type="url" name="site" id="site" placeholder="http://">
+          </div>
+        </fieldset>
+
+
+        <div>
+          <fieldset class="fieldset">
+            <legend>Your interests</legend>
+
+            <div class="input-checkbox">
+              <input type="checkbox" name="webdevelop" id="webdevelop" value="web develop">
+              <label for="webdevelop">Web Develop</label>
+            </div>
+
+            <div class="input-checkbox">
+              <input type="checkbox" name="books" id="books" value="books">
+              <label for="books">Books</label>
+            </div>
+
+            <div class="input-checkbox">
+              <input type="checkbox" name="sport" id="sport" value="sport">
+              <label for="sport">Sport</label>
+            </div>
+
+            <div class="input-checkbox">
+              <input type="checkbox" name="astronomy" id="astronomy" value="astronomy">
+              <label for="astronomy">Astronomy</label>
+            </div>
+
+            <div class="input-checkbox">
+              <input type="checkbox" name="psihology" id="psihology" value="psihology">
+              <label for="psihology">Psihology</label>
+            </div>
+
+            <div>
+              <label class="fieldset__label" for="about">About you</label>
+              <textarea name="about" id="about" cols="30" rows="10" placeholder="Tell us about you"></textarea>
+            </div>
+          </fieldset>
+        </div>
+
+        <fieldset class="fieldset">
+          <legend>Button</legend>
+          <div>
+            <button class="button__submit" type="submit">Send</button>
+            <button class="button__reset" type="reset">Clear</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+
+    <footer class="footer">
+      <div class="copyright">&copy; John Doe</div>
+    </footer>
+  </div>
+
+</body>
+
+</html>

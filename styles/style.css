@@ -1,0 +1,408 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+.wrapper {
+  height: 100%;
+}
+
+body {
+  background-color: #a19e9ea8;
+  font-family: "Playfair Display", "Roboto Slab", "Rochester", serif;
+  background-image: url(../images/VecteezyWhite-Background-02RD0421-rev-01_generated.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  color: black;
+  font-size: 5rem;
+  padding-top: 30px;
+  text-shadow: 3px 4px 2px black;
+}
+
+input,
+textarea {
+  width: 250px;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+.wrapper--gallery {
+  background-image: url(../images/White\ Background.jpg);
+  background-repeat: repeat;
+}
+
+.second-image {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  height: 300px;
+  width: 500px;
+  background-image: url(../images/Magazine-Clip-Art-Transparent-PNG.png);
+  background-size: 500px;
+  background-repeat: no-repeat;
+}
+.container {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  max-width: 1280px;
+  padding: 0px 20px 70px 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  left: 0;
+  top: 0;
+  height: 100px;
+  background-color: #a19e9e;
+  padding: 15px;
+}
+
+.header-navbar__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.join-us-button__link,
+.header-navbar__link {
+  background-color: brown;
+  border-radius: 5px;
+  color: white;
+  padding: 13px;
+  display: block;
+  transition: 0.4s;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: "Playfair Display", serif;
+  will-change: transform;
+}
+
+.header-navbar__link:hover {
+  transform: scale(1.1) translateY(-5px);
+  color: brown;
+  background-color: rgb(235, 227, 227);
+}
+
+.quote {
+  font-family: "Rochester", serif;
+  font-size: 30px;
+}
+
+.join-us-button {
+  margin-top: 40px;
+  transition: 0.5s;
+}
+
+.join-us-button:hover {
+  transform: rotate(1turn);
+}
+
+.footer {
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  background-color: #a19e9e;
+  padding: 20px;
+  text-align: center;
+}
+
+.articles-navbar,
+.page-nav-navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+.articles-navbar__list,
+.page-nav-navbar__list {
+  list-style: none;
+  margin: 0;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3px;
+}
+
+.articles-navbar__link,
+.page-nav-navbar-list__link {
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 700;
+  color: black;
+  background-color: rgba(165, 42, 42, 0.555);
+  display: block;
+  padding: 5px;
+  border-radius: 5px;
+  transition: 0.3;
+}
+.articles-navbar__link:hover {
+  background-color: rgba(128, 128, 128, 0.603);
+  color: brown;
+}
+
+.page-nav-navbar-list__link:hover {
+  background-color: rgba(128, 128, 128, 0.603);
+  color: brown;
+}
+
+.article-intro__link {
+  font-family: "Roboto Slab", sans-serif;
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+.article-intro__text {
+  display: inline-block;
+  background-color: rgba(133, 127, 127, 0.205);
+  padding: 5px;
+  font-weight: 700;
+  border-radius: 3px;
+}
+
+.article-intro__read-more-link {
+  text-decoration: underline;
+}
+
+.article-intro__read-more-link:before {
+  content: ">>>";
+}
+
+.article-intro__read-more-link:hover {
+  text-decoration: none;
+  color: brown;
+}
+
+.article-intro__comments-link {
+  text-decoration: underline;
+  color: brown;
+}
+
+.first-letter p:first-letter {
+  font-family: "Roboto Slab", serif;
+  font-weight: 00;
+  font-size: 2rem;
+  color: brown;
+  margin-left: 10px;
+  margin-right: 2px;
+}
+
+.catalog {
+  width: 50%;
+  padding: 5px;
+  background: rgba(128, 128, 128, 0.253);
+  border-radius: 5px;
+}
+.catalog__category-marker {
+  font-size: 1.8rem;
+  font-weight: 600;
+  list-style-image: url(../images/checkmark-circle-outline.svg);
+}
+
+.catalog__list-marker {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 5px;
+  margin-top: 5px;
+  margin-right: 20px;
+  background-color: rgba(165, 42, 42, 0.521);
+  list-style: inside;
+  list-style-image: url(../images/chevron-back-outline.svg);
+  border-radius: 5px;
+}
+
+.new::after {
+  position: relative;
+  bottom: 3px;
+  content: "new";
+  background-color: rgba(247, 209, 108, 0.884);
+  color: white;
+  font-size: 1rem;
+  margin-left: 10px;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(128, 128, 128, 0.466);
+  padding: 20px;
+  gap: 30px;
+  border-radius: 5px;
+}
+
+.gallery__image {
+  outline: 10px solid white;
+  border-radius: 3px;
+  transition: 0.2s;
+  text-align: center;
+}
+
+.gallery__image:hover {
+  outline: none;
+}
+
+.fieldset {
+  padding: 20px;
+  border: 3px solid black;
+  border-radius: 5px;
+  font-weight: 800;
+  background-color: rgba(128, 128, 128, 0.267);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.fieldset__label {
+  display: block;
+}
+
+.field {
+  clear: both;
+  text-align: left;
+}
+
+.button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button__submit,
+.button__reset {
+  font-weight: 600;
+  border-radius: 3px;
+}
+
+.contacts {
+  display: flex;
+  margin-top: 50px;
+}
+
+.contacts__text-block {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  font-weight: 600;
+}
+
+.contacts-text-block--border {
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
+}
+
+.contacts__map {
+  width: 350px;
+  height: 350px;
+  margin-left: 70px;
+  outline: 3px solid black;
+  border-radius: 3px;
+}
+
+.contacts-text-block__header {
+  line-height: 0px;
+}
+
+.contacts-text-block__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.contacts-text-block-list__item {
+  margin: 5px;
+}
+
+.contacts-text-block-list__link {
+  color: brown;
+}
+
+input[type="text"] {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+legend {
+  text-transform: uppercase;
+}
+
+.first-block {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+input[type="radio"],
+[type="checkbox"] {
+  width: initial;
+}
+
+.input-radio {
+  margin: 8px 0;
+}
+
+.input-radio:hover {
+  outline: 3px dotted black;
+}
+
+.input-checkbox:hover {
+  outline: 3px dotted black;
+}
+
+input::placeholder {
+  font-weight: 600;
+}
+
+textarea::placeholder {
+  font-weight: 600;
+}
