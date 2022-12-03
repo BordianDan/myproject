@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Roboto+Slab&family=Rochester&display=swap"
+    rel="stylesheet">
+  <title>Contacts</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header class="header">
+      <nav class="header__navbar">
+        <ul class="header-navbar__list">
+          <li class="header-navbar__item"><a class="header-navbar__link" href="../index.html">Main Page</a></li>
+          <li class="header-navbar__item"><a class="header-navbar__link" href="articles.html">Articles</a></li>
+          <li class="header-navbar__item"><a class="header-navbar__link" href="catalog.html">Catalog</a></li>
+          <li class="header-navbar__item"><a class="header-navbar__link" href="contacts.html">Contacts</a></li>
+          <li class="header-navbar__item"><a class="header-navbar__link" href="gallery.html">Gallery</a></li>
+          <li class="header-navbar__item"><a class="header-navbar__link" href="page-nav.html">Navigation</a></li>
+          <li class="header-navbar__item"><a class="header-navbar__link" href="registration.html">Registration</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h1>Contacts</h1>
+
+      <form action="https://tests.fomenko.top/echo/index.php">
+        <fieldset class="fieldset">
+          <legend class="fieldset__legend">Any questions?</legend>
+
+          <div class="field">
+            <label class="fieldset__label" for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Name">
+          </div>
+
+          <div class="field">
+            <label class="fieldset__label" for="tel">Phone</label>
+            <input type="tel" name="tel" id="tel" placeholder="+373-xxx-xxx">
+          </div>
+
+          <div class="field">
+            <label class="fieldset__label" for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email">
+          </div>
+
+          <div class="field">
+            <label class="fieldset__label" for="questions">Questions</label>
+            <textarea name="questions" id="questions" cols="30" rows="10" placeholder="Ask a question"></textarea>
+          </div>
+
+          <div class="button">
+            <button class="button__submit" type="submit">Send</button>
+            <button class="button__reset" type="reset">Clear</button>
+          </div>
+        </fieldset>
+      </form>
+
+
+      <div class="contacts">
+        <div class="contacts__text-block">
+          <div class="contacts-text-block--border">
+            <h2 class="contacts-text-block__header">Contact us</h2>
+            <ul class="contacts-text-block__list">
+              <li class="contacts-text-block-list__item"><a class="contacts-text-block-list__link" href="
+                  tel:+3795425548">tel:+3795425548</a>
+              </li>
+              <li class="contacts-text-block-list__item"><a class="contacts-text-block-list__link" href="
+                  mailto:forest@gmail.com">forest@gmail.com</a></li>
+            </ul>
+            <div>
+              <address>Nicolae H. Costin 63 street, Chisinau</address>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <iframe class="contacts__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5437.9448156471635!2d28.771250654846035!3d47.04077223645902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cbd75b8ffd5567%3A0x999acaf84b726fa3!2sForest%20-%20Bar%20%26%20Grill!5e0!3m2!1sru!2s!4v1668349801713!5m2!1sru!2s"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="copyright">&copy; John Doe</div>
+      </footer>
+    </div>
+
+</body>
+
+</html>
