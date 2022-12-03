@@ -185,7 +185,7 @@ textarea {
 
 .article-intro__link {
   font-family: "Roboto Slab", sans-serif;
-  color: rgba(0, 0, 0, 0.726);
+  color: black;
   border-bottom: 1px solid black;
 }
 
@@ -267,7 +267,7 @@ textarea {
   justify-content: center;
   background-color: rgba(128, 128, 128, 0.466);
   padding: 20px;
-  gap: 35px;
+  gap: 30px;
   border-radius: 5px;
 }
 
