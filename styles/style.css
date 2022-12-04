@@ -2,8 +2,7 @@
   box-sizing: border-box;
 }
 html,
-body,
-.wrapper {
+body {
   height: 100%;
 }
 
@@ -17,27 +16,6 @@ body {
   position: relative;
 }
 
-a {
-  text-decoration: none;
-}
-
-h1 {
-  text-transform: uppercase;
-  text-align: center;
-  font-family: "Playfair Display", serif;
-  color: black;
-  font-size: 5rem;
-  padding-top: 30px;
-  text-shadow: 3px 4px 2px black;
-}
-
-input,
-textarea {
-  width: 250px;
-  padding: 10px;
-  border-radius: 3px;
-}
-
 .wrapper {
   position: relative;
   display: flex;
@@ -46,10 +24,7 @@ textarea {
   justify-content: space-between;
   align-content: center;
   align-items: center;
-}
-.wrapper--gallery {
-  background-image: url(../images/White\ Background.jpg);
-  background-repeat: repeat;
+  height: 100%;
 }
 
 .second-image {
@@ -84,6 +59,35 @@ textarea {
   align-items: center;
 }
 
+a {
+  text-decoration: none;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  color: black;
+  font-size: 5rem;
+  padding-top: 30px;
+  text-shadow: 3px 4px 2px black;
+}
+
+input::placeholder {
+  font-weight: 600;
+}
+
+textarea::placeholder {
+  font-weight: 600;
+}
+
+input,
+textarea {
+  width: 250px;
+  padding: 10px;
+  border-radius: 3px;
+}
+
 .header {
   position: fixed;
   z-index: 10;
@@ -105,8 +109,14 @@ textarea {
   gap: 10px;
 }
 
-.join-us-button__link,
-.header-navbar__link {
+.header-navbar__link:hover {
+  transform: scale(1.1) translateY(-5px);
+  color: brown;
+  background-color: rgb(235, 227, 227);
+}
+
+.header-navbar__link,
+.join-us-button__link {
   background-color: brown;
   border-radius: 5px;
   color: white;
@@ -119,15 +129,16 @@ textarea {
   will-change: transform;
 }
 
-.header-navbar__link:hover {
-  transform: scale(1.1) translateY(-5px);
-  color: brown;
-  background-color: rgb(235, 227, 227);
-}
-
-.quote {
-  font-family: "Rochester", serif;
-  font-size: 30px;
+.footer {
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  background-color: #a19e9e;
+  padding: 20px;
+  text-align: center;
 }
 
 .join-us-button {
@@ -139,16 +150,9 @@ textarea {
   transform: rotate(1turn);
 }
 
-.footer {
-  position: fixed;
-  z-index: 10;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  height: 60px;
-  background-color: #a19e9e;
-  padding: 20px;
-  text-align: center;
+.quote {
+  font-family: "Rochester", serif;
+  font-size: 30px;
 }
 
 .articles-navbar,
@@ -287,6 +291,11 @@ textarea {
   text-align: center;
 }
 
+.gallery-background {
+  background-image: url(../images/White\ Background.jpg);
+  background-repeat: repeat;
+}
+
 .gallery__image:hover {
   outline: none;
 }
@@ -382,15 +391,6 @@ legend {
   text-transform: uppercase;
 }
 
-.first-block {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 input[type="radio"],
 [type="checkbox"] {
   width: initial;
@@ -406,12 +406,4 @@ input[type="radio"],
 
 .input-checkbox:hover {
   outline: 3px dotted black;
-}
-
-input::placeholder {
-  font-weight: 600;
-}
-
-textarea::placeholder {
-  font-weight: 600;
 }
