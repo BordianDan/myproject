@@ -2,8 +2,7 @@
   box-sizing: border-box;
 }
 html,
-body,
-.wrapper {
+body {
   height: 100%;
 }
 
@@ -15,6 +14,33 @@ body {
   background-size: cover;
   background-repeat: repeat;
   position: relative;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.second-image {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  height: 300px;
+  width: 500px;
+  background-image: url(../images/Magazine-Clip-Art-Transparent-PNG.png);
+  background-size: 500px;
+  background-repeat: no-repeat;
+}
+
+.gallery-background {
+  background-image: url(../images/White\ Background.jpg);
+  background-repeat: repeat;
 }
 
 a {
@@ -31,6 +57,14 @@ h1 {
   text-shadow: 3px 4px 2px black;
 }
 
+input::placeholder {
+  font-weight: 600;
+}
+
+textarea::placeholder {
+  font-weight: 600;
+}
+
 input,
 textarea {
   width: 250px;
@@ -38,41 +72,26 @@ textarea {
   border-radius: 3px;
 }
 
-.wrapper {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
-}
-.wrapper--gallery {
-  background-image: url(../images/White\ Background.jpg);
-  background-repeat: repeat;
+input[type="text"] {
+  text-transform: capitalize;
+  font-weight: 500;
 }
 
-.second-image {
-  position: absolute;
-  bottom: 10%;
-  right: 10%;
-  height: 300px;
-  width: 500px;
-  background-image: url(../images/Magazine-Clip-Art-Transparent-PNG.png);
-  background-size: 500px;
-  background-repeat: no-repeat;
+legend {
+  text-transform: uppercase;
 }
-.container {
-  width: 100%;
-  margin-top: 100px;
-  margin-bottom: 100px;
+
+input[type="radio"],
+[type="checkbox"] {
+  width: initial;
+}
+
+.header__navbar,
+.container,
+.copyright {
   max-width: 1280px;
-  padding: 0px 20px 70px 20px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header {
@@ -96,8 +115,14 @@ textarea {
   gap: 10px;
 }
 
-.join-us-button__link,
-.header-navbar__link {
+.header-navbar__link:hover {
+  transform: scale(1.1) translateY(-5px);
+  color: brown;
+  background-color: rgb(235, 227, 227);
+}
+
+.header-navbar__link,
+.join-us-button__link {
   background-color: brown;
   border-radius: 5px;
   color: white;
@@ -110,15 +135,17 @@ textarea {
   will-change: transform;
 }
 
-.header-navbar__link:hover {
-  transform: scale(1.1) translateY(-5px);
-  color: brown;
-  background-color: rgb(235, 227, 227);
-}
-
-.quote {
-  font-family: "Rochester", serif;
-  font-size: 30px;
+.container {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  max-width: 1280px;
+  padding: 0px 20px 70px 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
 .join-us-button {
@@ -130,16 +157,9 @@ textarea {
   transform: rotate(1turn);
 }
 
-.footer {
-  position: fixed;
-  z-index: 10;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  height: 60px;
-  background-color: #a19e9e;
-  padding: 20px;
-  text-align: center;
+.quote {
+  font-family: "Rochester", serif;
+  font-size: 30px;
 }
 
 .articles-navbar,
@@ -171,7 +191,7 @@ textarea {
   display: block;
   padding: 5px;
   border-radius: 5px;
-  transition: 0.3;
+  transition: 0.3s;
 }
 .articles-navbar__link:hover {
   background-color: rgba(128, 128, 128, 0.603);
@@ -217,7 +237,7 @@ textarea {
 
 .first-letter p:first-letter {
   font-family: "Roboto Slab", serif;
-  font-weight: 00;
+  font-weight: 600;
   font-size: 2rem;
   color: brown;
   margin-left: 10px;
@@ -364,29 +384,6 @@ textarea {
   color: brown;
 }
 
-input[type="text"] {
-  text-transform: capitalize;
-  font-weight: 500;
-}
-
-legend {
-  text-transform: uppercase;
-}
-
-.first-block {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-input[type="radio"],
-[type="checkbox"] {
-  width: initial;
-}
-
 .input-radio {
   margin: 8px 0;
 }
@@ -399,10 +396,14 @@ input[type="radio"],
   outline: 3px dotted black;
 }
 
-input::placeholder {
-  font-weight: 600;
-}
-
-textarea::placeholder {
-  font-weight: 600;
+.footer {
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  background-color: #a19e9e;
+  padding: 20px;
+  text-align: center;
 }
